@@ -66,4 +66,5 @@ com.duckduckgo.mobile.android but should contain DDG application data.
 ### <u>Footnotes</u>
 1. [Viewing extracted Android app data using an emulator](
 https://abrignoni.blogspot.com/2017/08/viewing-extracted-android-app-data.html)
-2. <u>Note</u>: All 7 artifacts listed above are parsed but there may be additional items of interest within each artifact which can be parsed to a greater extent
+2. All 7 artifacts of interest listed are parsed but there may be additional items of interest within each artifact
+which can be parsed to a greater extent

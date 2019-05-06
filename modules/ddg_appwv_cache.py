@@ -78,6 +78,7 @@ def process_appwv_cache(duckduckgo_path, output_path):
 
 
 if __name__ == '__main__':
-    # Process artifacts
+    # Set DDG application data path for testing
     ddg_path, out_path = process_directory_paths()
+    # Process artifacts
     process_appwv_cache(ddg_path, out_path)
