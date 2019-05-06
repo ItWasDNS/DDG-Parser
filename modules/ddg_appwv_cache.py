@@ -32,7 +32,7 @@ def process_appwv_cache(duckduckgo_path, output_path):
                             content = f.read()
                             file_len = len(content)
                             # Retrieve URL
-                            url_len = struct.unpack_from('h', content, 12)[0]
+                            url_len = struct.unpack_from('i', content, 12)[0]
                             f.seek(20, 0)
                             url = f.read(url_len).decode("utf-8")
                             o.write("\nURL: %s" % url)

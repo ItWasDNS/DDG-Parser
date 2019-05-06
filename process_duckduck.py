@@ -17,13 +17,13 @@ from modules.ddg_cache import process_cache
 from modules.ddg_db_app import process_db_app
 from modules.ddg_db_httpauth import process_db_httpauth
 from modules.ddg_shared_prefs import process_sharedprefs
+from modules.helpers.ddg_path_handler import process_directory_paths
 
 if __name__ == '__main__':
     # Prompt user for DuckDuckGo application data directory
     # Directory does not need to be com.duckduckgo.mobile.android
     # Directory should contain DDG app data
-    from modules.helpers.ddg_path_handler import process_directory_paths_core
-    ddg_path, output_path = process_directory_paths_core()
+    ddg_path, output_path = process_directory_paths()
 
     # Process Application Data
     print("Processing: 'com.duckduckgo.mobile.android/shared_prefs/*.xml'")
